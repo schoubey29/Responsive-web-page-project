@@ -1,0 +1,123 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Reliance Digital Survey Form</h1>
+    <p id="description" class="description text-center"> Thank you for your valuable      time to help us in improving services.</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required/></div>
+      <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email"
+             id="email"
+             name="email"
+             placeholder="eg. abc@xyz.com"
+             class="form-control"
+             required/>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number"
+             id="number"
+             name="age"
+             class="form-control"
+             placeholder="In years"
+             min="10"
+             max="99"/>
+      </div>
+      <div class="form-group">
+        <p>What is your current profession?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Job</option>
+          <option value="business">Business</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+     </div>
+     <div class="form-group">
+      <p>Would you recommend Reliance Digital to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely
+      </label>
+      <label>
+        <input name="user-recommend"
+               value="maybe"
+               type="radio"
+               class="input-radio"/>Maybe
+      </label>
+      <label>
+        <input name="user-recommend"
+               value="not-sure"
+               type="radio"
+               class="input-radio"/>Not Sure
+      </label>
+      </div>
+      <div class="form-group">
+        <p>Which products you want us to go with?
+        <span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="Mobile"
+               class="input-checkbox"/>Mobile
+      </label>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="TV"
+               class="input-checkbox"/>TV
+      </label>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="Accessories"
+               class="input-checkbox"/>Accessories
+      </label>
+      <label>
+        <input type="checkbox"
+               name="prefer"
+               value="Home-Theatre"
+               class="input-checkbox"/>Home-Theatre
+      </label>
+      <div class="form-group">
+        <p> Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here...">
+        </textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit"
+              id="submit"
+              class="submit-button">Submit</button>
+      </div>
+    </form>
+   </div>
