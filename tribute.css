@@ -1,0 +1,88 @@
+body{
+  background-color: Lightgrey;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.6rem;
+  line-height: 0.8;
+}
+h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height:1.5;
+  }
+}
+#main {
+  margin: 50px 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #eee;
+}
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+  line-height: 1.2;
+}
+#tribute-link:hover{
+  color: green;
+}
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+blockquotes{
+  font-style: italic;
+  max-width: 545px;
+  paddding: 10px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  line-height:1.5;
+}
+footer{
+  height: 15px;
+  width: auto;
+  padding: 5px;
+  color: grey;
+  background-color: white;
+  text-align: left;
+  font-size: 17px
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
